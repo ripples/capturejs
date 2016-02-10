@@ -4,17 +4,37 @@
   "description": "Capture Scripts",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile": "babel -d js/ src/",
+    "prepublish": "npm run compile"
+  },
+  "bin": {
+    "capturejs": "./bin/capturejs.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ripples/capturejs.git"
   },
-  "keywords": ["javascript", "image", "capture", "vision"],
+  "keywords": [
+    "javascript",
+    "image",
+    "capture",
+    "vision"
+  ],
   "author": "Tim Richards",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/ripples/capturejs/issues"
   },
-  "homepage": "https://github.com/ripples/capturejs#readme"
+  "homepage": "https://github.com/ripples/capturejs#readme",
+  "dependencies": {
+    "express": "^4.13.4",
+    "winston": "^2.1.1",
+    "yargs": "^3.32.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.5.1",
+    "babel-preset-es2015": "^6.5.0",
+    "babel-preset-stage-0": "^6.5.0"
+  }
 }
