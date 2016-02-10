@@ -1,0 +1,20 @@
+{
+  "name": "capturejs",
+  "version": "0.0.1",
+  "description": "Capture Scripts",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ripples/capturejs.git"
+  },
+  "keywords": ["javascript", "image", "capture", "vision"],
+  "author": "Tim Richards",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ripples/capturejs/issues"
+  },
+  "homepage": "https://github.com/ripples/capturejs#readme"
+}
